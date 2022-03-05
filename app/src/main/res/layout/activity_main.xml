@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#A9D8EA"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/sourcesansprobold"
+        android:gravity="center"
+        android:text="Enter your details"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerbtn"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:cornerRadius="25dp"
+        android:fontFamily="@font/sourcesansprobold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Register" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/viewBtn"
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:fontFamily="@font/sourcesansprobold"
+        android:gravity="center"
+        android:text="View"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="25dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleView"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
