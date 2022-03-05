@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="22dp"
+    android:layout_margin="10dp"
     android:weightSum="1"
     android:padding="15dp"
     android:background="@drawable/card_back"
@@ -17,18 +17,21 @@
            android:id="@+id/card_tv1"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:textSize="14dp"
+           android:textColor="@color/black"
+           android:textSize="14sp"
            android:text="id"/>
        <TextView
            android:id="@+id/card_tv2"
            android:layout_width="wrap_content"
-           android:textSize="14dp"
+           android:textSize="14sp"
+           android:textColor="@color/black"
            android:layout_height="wrap_content"
            android:text="Name"/>
        <TextView
            android:id="@+id/card_tv3"
            android:layout_width="wrap_content"
-           android:textSize="14dp"
+           android:textSize="14sp"
+           android:textColor="@color/black"
            android:layout_height="wrap_content"
            android:text="Email"/>
    </LinearLayout>
